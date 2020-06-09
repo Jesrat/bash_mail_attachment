@@ -35,12 +35,12 @@ Content-Type: text/csv; name="${filename}"
 Content-Transfer-Encoding: 8bit
 Content-Disposition: attachment; filename="${filename}"
 
-$(cat ${filename})
+$(cat ${filepath})
 
 --${BOUNDARY}--
 END
 )
-
+#cambio
 
 echo "$CONTENT" | /usr/sbin/sendmail -t 2>/dev/null
 
